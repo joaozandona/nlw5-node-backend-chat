@@ -30,7 +30,6 @@
               <!-- <label class="date">{{date}}</label> -->
             </span>
           </div>
-        </div>
         </script>
         <script id="admin-template" type="text/template">
           <div class="admin">
@@ -101,14 +100,14 @@
     const chat = document.getElementById("chat_help");
 
     function onLoad() {
-       fetch("http://localhost:3333/settings/admin").then((result) =>
-         result.json().then((response) => {
-           const buttonSupport = document.getElementById("btn_support");
-           if (!response.chat) {
-             buttonSupport.style.display = "none";
-           }
-         })
-       );
+      fetch("http://localhost:3333/settings/admin").then((result) =>
+        result.json().then((response) => {
+          const buttonSupport = document.getElementById("btn_support");
+          if (!response.chat) {
+            buttonSupport.style.display = "none";
+          }
+        })
+      );
     }
 
     function openChat() {
@@ -124,7 +123,6 @@
       const length_text = event.target.value.length;
       charac_remaining.innerHTML = Number(250) - Number(length_text);
     }
-
   </script>
 
   <script src="/socket.io/socket.io.js"></script>
