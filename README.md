@@ -30,7 +30,7 @@
 
 <p align="center">
 	<b>User screen</b><br />
-  <img alt="Home screen" src="./.github/suporte.png" />
+  <img alt="Home screen" src="./.github/suporte.png" /><br />
   <b>Starting contact with the admin</b><br />
 	<img alt="Contact Admin" src="./.github/suporte_2.png" />
 	<br />
